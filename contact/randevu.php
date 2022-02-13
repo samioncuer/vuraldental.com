@@ -31,7 +31,7 @@
         <!-- Responsive CSS -->
 		<link rel="stylesheet" href="../assets/css/responsive.css">
 		
-		<title>Grin - Dentist & Dental Clinic HTML Template</title>
+		<title>Vural Dental</title>
 
         <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     </head>
@@ -45,58 +45,6 @@
         </div>
     </div>
     <!-- End Preloader Area -->
-    
-    <!-- Start Top Header Area -->
-    <div class="top-header-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12">
-                    <ul class="top-header-information">
-                        <li>
-                            <i class='bx bxs-map'></i>
-                            <!-- Halaskargazi mah. Halaskargazi cad. No:38-66 Daire:29 ŞİŞLİ / İSTANBUL -->
-                            Halaskargazi cad. No:38-66 Daire:29, Şişli
-                        </li>
-
-                        <li>
-                            <i class='bx bx-envelope-open'></i>
-                            <a href="mailto:info@vuraldental.com">info@vuraldental.com</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-6 col-md-12">
-                    <ul class="top-header-optional">
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class='bx bxl-facebook'></i>
-                            </a>
-                            <a href="https://twitter.com/?lang=en" target="_blank">
-                                <i class='bx bxl-twitter'></i>
-                            </a>
-                            <a href="https://www.linkedin.com/" target="_blank">
-                                <i class='bx bxl-linkedin'></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class='bx bxl-instagram'></i>
-                            </a>
-                        </li>
-
-                        <!-- <li class="languages-list">
-                            <select>
-                                <option value="1">English</option>
-                                <option value="2">العربيّة</option>
-                                <option value="3">Deutsch</option>
-                                <option value="3">Português</option>
-                                <option value="3">简体中文</option>
-                            </select>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Top Header Area -->
 
     <!-- Start Middle Header Area -->
     <div class="middle-header-area">
@@ -115,7 +63,7 @@
                         <li>
                             <i class="flaticon-emergency-call"></i>
                             Bizi Arayın
-                            <span><a href="tel:088123654987">+088 123 654 987</a></span>
+                            <span><a href="tel:+905528559086">+90 552 855 90 86</a></span>
                         </li>
 
                         <li>
@@ -137,7 +85,7 @@
                 <div class="main-responsive-menu">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/images/logo.png" alt="logo">
+                            <img src="../assets/images/logo.png" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -151,34 +99,27 @@
                         <ul class="navbar-nav">
                             
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link active">Anasayfa</a>
+                                <a href="../index.html" class="nav-link">Anasayfa</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="about-us.html" class="nav-link">Hakkımızda</a>
+                                <a href="../about-us.html" class="nav-link">Hakkımızda</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="services.html" class="nav-link">Tedavilerimiz</a>
+                                <a href="../services.html" class="nav-link">Tedavilerimiz</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="contact-us.html" class="nav-link">İletişim</a>
+                                <a href="iletisim.php" class="nav-link active">İletişim</a>
                             </li>
                         </ul>
 
                         <div class="others-options d-flex align-items-center">
-                            <!-- <div class="option-item">
-                                <div class="search-btn">
-                                    <a class="#" href="#searchmodal" data-bs-toggle="modal" data-bs-target="#searchmodal">
-                                        <i class="flaticon-search"></i>
-                                    </a>
-                                </div>
-                            </div> -->
 
                             <div class="option-item">
                                 <div class="navbar-btn">
-                                    <a href="appointment.html" class="default-btn">Randevu Al</a>
+                                    <a href="randevu.php" class="default-btn">Randevu Al</a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +151,7 @@
 
                             <div class="option-item">
                                 <div class="navbar-btn">
-                                    <a href="appointment.html" class="default-btn">Book Appointment</a>
+                                    <a href="randevu.php" class="default-btn">Randevu Al</a>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +191,7 @@
                     <h2>Randevu</h2>
                     
                     <ul class="pages-list">
-                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="../index.html">Anasayfa</a></li>
                         <li>Randevu</li>
                     </ul>
                 </div>
@@ -324,30 +265,61 @@
                 <div class="appointment-form">
                     <h4><i class="flaticon-calendar"></i>Randevu Al</h4>
 
-                    <form>
+                    <form action="randevu.php?islem" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="İsim">
+                            <input type="text" name="isim" class="form-control" placeholder="İsim">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="E-posta">
+                            <input type="text" name="eposta" class="form-control" placeholder="E-posta">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telefon">
+                            <input type="text" name="phone" class="form-control" placeholder="Telefon">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Tarih">
+                            <input type="text" name="date" class="form-control" placeholder="Tarih">
                         </div>
 
                         <button type="submit" class="default-btn">Randevu Oluştur</button>
+                        <?php
+                            if (isset($_GET['islem'])) {
+        
+                                if ($_POST['eposta']<>'' && $_POST['isim']<>'' && $_POST['phone']<>'' && $_POST['date']<>'') {
+
+                                require_once("class.phpmailer.php");
+
+                                $mail = new PHPMailer();
+                                $mail->IsSMTP();
+                                $mail->Host = "mail.vuraldental.com";
+                                $mail->SMTPAuth = true;
+                                $mail->CharSet = 'utf-8';
+                                $mail->Username = "info@vuraldental.com";
+                                $mail->Password = "BaHA.6c1.=63@sVt";
+                                $mail->From = "info@vuraldental.com";
+                                $mail->Fromname = $_POST['isim'];
+                                $mail->AddAddress("sami.oncuer2@gmail.com","Mail gönderimi");
+                                $mail->Subject = $_POST['phone'] . $_POST['eposta'];
+                                $mail->Body = $_POST['date'];
+
+                                if(!$mail->Send())
+                                {
+                                    echo '<font color="#F62217"><b>Gönderim Hatası: ' . $mail->ErrorInfo . '</b></font>';
+                                    exit;
+                                }
+                                echo '<font color="#41A317"><b>Mesaj başarıyla gönderildi.</b></font>';
+                                } else {
+                                    echo '<font color="#F62217"><b>Tüm alanların doldurulması zorunludur.</b></font>';
+                                }
+                            }
+                        ?>
                     </form>
                 </div>
             </div>
         </section>
         <!-- End Appointment Area -->
-
+        
         <!-- Start Footer Area -->
         <footer class="footer-area pt-100 pb-70">
             <div class="container">
@@ -355,7 +327,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-footer-widget">
                             <h2>
-                                <a href="index.html">Vural Dental</a>
+                                <a href="../index.html">Vural Dental</a>
                             </h2>
                             <p>
                                 Uzun süredir hayalini kurduğumuz<br>
@@ -370,7 +342,7 @@
                             </div> -->
 
                             <div class="footer-info">
-                                <img src="assets/images/footer/footer-1.jpg" alt="image">
+                                <img src="../assets/images/footer/footer-1.jpg" alt="image">
                                 <h4>Dr. Ahmet Vural</h4>
                                 <span>CEO & Founder</span>
                             </div>
@@ -384,16 +356,16 @@
                             <ul class="quick-links">
                                 
                                 <li>
-                                    <a href="about-us.html">Hakkımızda</a>
+                                    <a href="../about-us.html">Hakkımızda</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">Tedavilerimiz</a>
+                                    <a href="../services.html">Tedavilerimiz</a>
                                 </li>
                                 <li>
-                                    <a href="dentist.html">İletişim</a>
+                                    <a href="iletisim.php">İletişim</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Online Randevu</a>
+                                    <a href="randevu.php">Online Randevu</a>
                                 </li>
                                
                             </ul>
@@ -409,7 +381,7 @@
                                 <li>
                                     <i class="flaticon-emergency-call"></i>
                                     Hemen Arayın!
-                                    <span><a href="tel:088123654987">+088 123 654 987</a></span>
+                                    <span><a href="tel:+905528559086">+90 552 855 90 86</a></span>
                                 </li>
     
                                 <li>
@@ -436,7 +408,7 @@
             <div class="container">
                 <div class="copyright-area-content">
                     <p>
-                        lamagarage © 2022 
+                        Vural Dental © Tüm Hakları Saklıdır.
                     </p>
                 </div>
             </div>

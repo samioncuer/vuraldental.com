@@ -153,7 +153,7 @@ class PHPMailer
      *  Hosts will be tried in order.
      *  @var string
      */
-    var $Host        = "mail.alanadınız.com";
+    var $Host        = "mail.alanad�n�z.com";
 
     /**
      *  Sets the default SMTP server port.
@@ -183,7 +183,7 @@ class PHPMailer
      *  Sets SMTP password.
      *  @var string
      */
-    var $Password     = "E-Posta Şifreniz";
+    var $Password     = "E-Posta �ifreniz";
 
     /**
      *  Sets the SMTP server timeout in seconds. This function will not 
@@ -1213,7 +1213,7 @@ class PHPMailer
 
         switch (strtolower($position)) {
           case "phrase":
-            $encoded = preg_replace("/([^A-Za-z0-9!*+\/ -])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
+            $encoded = preg_replace_callback("/([^A-Za-z0-9!*+\/ -])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
             break;
           case "comment":
             $encoded = preg_replace("/([\(\)\"])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
